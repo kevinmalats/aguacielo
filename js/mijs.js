@@ -13,16 +13,12 @@
 	 		var parallax2 = new Parallax(scene2);
 
 			// $( "#img1" ).show("slow");
-
+//https://www.youtube.com/watch?v=2IUjVqJo5WE
 
 
 });
 $(function(){
-	$('.parallax-window').parallax({imageSrc: 'img/botella.jpg'});
-	$('.parallax-window').parallax({
-			naturalWidth: 600,
-			naturalHeight: 400
-		});
+   $(window).stellar();
       });
 
 var menu = document.getElementById('container-menu');
