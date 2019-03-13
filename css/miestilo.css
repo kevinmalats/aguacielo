@@ -6,11 +6,46 @@
     text-decoration: none;
 
 }
+section {
+    height: 937px;
+}
+.micol-izq{
+  padding-right: 200px;
+}
+.micol-der{
+  padding-left: 200px;
+}
 @media (min-width: 992px)
 .col-lg-6 {
     flex: 0 0 50%;
     max-width: 50%;
 }
+.bottle{
+  background-image: url("../img/botellaCielo.png");
+}
+
+section.bottle-cont {
+    position: relative;
+    overflow: hidden;
+}
+section.bottle-cont .bottle {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: calc(100%);
+    background-position: 50% 40px !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-size: auto 800px !important;
+    pointer-events: none;
+    z-index: 2;
+}
+
+
+
+
+
+
 .parallax{
 	background-attachment: fixed;
 	margin: 0px;
@@ -18,7 +53,7 @@
 	margin-top: -30px;
 	width: 100%;
 	height: 900px;
-	position: relative;
+	position: fixed;
 }
 .parallax .contenido{
 	position: relative;
@@ -31,12 +66,12 @@
 
 }
 .wrapper div{
-/*	position: fixed;*/
-	width: 60px;
-	height: 60px;
+	position: fixed;
+	width: 350px;
+	height: 350px;
 	border-radius: 50px;
-	background-color: #FFF;
-
+	background-image: url(../img/dev.PNG);
+  background-repeat: no-repeat;
 }
 #uno{
 	background: url(../img/nube.jpg);
@@ -49,6 +84,7 @@
 .containerd{
   display: block;
   position: absolute;
+
 }
 .logo{
   position: fixed;
@@ -70,9 +106,29 @@
 
 
 }
-.menu-nav{
-  height: 800px;
+#second{
+  background: #0B739A;
 
+}
+section.bottle-cont#muller .nextSection {
+    background: #1a1a1a;
+}
+section.bottle-cont .nextSection {
+    position: absolute;
+    width: 140px;
+    height: 70px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    cursor: pointer;
+    text-align: center;
+    line-height: 95px;
+}
+.menu-nav{
+  position: relative;
+  overflow: hidden;
 
 }
 .container-menu{
@@ -80,7 +136,8 @@
     z-index: 11;
     top: 0;
     right: 0;
-    background: linear-gradient(10deg, #313112, #2E2E22);
+  /*  background: linear-gradient(10deg, #313112, #2E2E22);*/
+    background-color: #4D7FE3;
     border-radius: 0% 0% 0% 100%;
     padding: 26px 26px 52px 52px;
     transition: all 0.2s;
