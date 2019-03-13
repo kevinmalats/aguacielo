@@ -1,4 +1,4 @@
- var scene = document.getElementById('scene');
+ /*var scene = document.getElementById('scene');
   var scene2 = document.getElementById('scene2');
 	$( window ).scroll(function() {
 		 var scrollTop = $(window).scrollTop();
@@ -16,10 +16,14 @@
 //https://www.youtube.com/watch?v=2IUjVqJo5WE
 
 
-});
+});*/
 $(function(){
-   $(window).stellar();
-      });
+           $(window).stellar();
+           $('.wrapper').css({
+             'height': screen.availHeight + 'px'
+           });
+
+         });
 
 var menu = document.getElementById('container-menu');
 
