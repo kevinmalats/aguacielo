@@ -6,11 +6,40 @@
     text-decoration: none;
 
 }
+.fullscreen-bg {
+
+    width: 100%;
+    height: auto;
+     min-height: 35rem;
+      padding: 15rem 0;
+      /*position: absolute;*/
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      overflow: hidden;
+      z-index: -100;
+    }
+
+    .fullscreen-bg__video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
 section {
     height: 937px;
 }
+.padre {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-top: 200px;
+}
 .micol-izq{
   padding-right: 200px;
+
 }
 .micol-der{
   padding-left: 200px;
@@ -104,6 +133,10 @@ section.bottle-cont .bottle {
   position: fixed;
 
 
+
+}
+#tercero{
+  background: #678682;
 
 }
 #second{
