@@ -206,6 +206,7 @@ section.bottle-cont .nextSection {
     font-size: 60px;
     text-align: center;
     color: white;
+    opacity: 1;
   display: block;
 
 }
