@@ -1,3 +1,5 @@
+alert("empezando");
+
 $(document).ready(function(){
   	var index = 0;
 sessionStorage.setItem('scrollTo',index);
