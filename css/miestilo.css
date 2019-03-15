@@ -115,7 +115,7 @@ section.bottle-cont .bottle {
 	width: 350px;
 	height: 350px;
 	border-radius: 50px;
-	background-image: url(../img/Cloud2.PNG);
+	background-image: url(../img/Cloud1.PNG);
   background-repeat: no-repeat;
 }
 #uno{
@@ -186,7 +186,7 @@ section.bottle-cont .nextSection {
     top: 0;
     right: 0;
   /*  background: linear-gradient(10deg, #313112, #2E2E22);*/
-    background-color: #4D7FE3;
+    background-color: #64A8EE;
     border-radius: 0% 0% 0% 100%;
     padding: 26px 26px 52px 52px;
     transition: all 0.2s;
