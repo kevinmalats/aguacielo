@@ -53,6 +53,9 @@ section {
 .bottle{
   background-image: url("../img/botellaCielo.png");
 }
+#chap{
+  background-image: url("../img/botellaCielosalp.png");
+}
 
 section.bottle-cont {
     position: relative;
@@ -70,12 +73,15 @@ section.bottle-cont .bottle {
     pointer-events: none;
     z-index: 2;
 }
-
+.presentaciones{
+  display: none;
+  animation: rotar 5s infinite linear;
+}
 .botellas-presentaciones img:hover{
   -webkit-transform:scale(1.3);transform:scale(1.3);
 }
 .botellas-presentaciones{
-  
+
   animation: rotar 5s infinite linear;
 }
 
@@ -104,20 +110,20 @@ section.bottle-cont .bottle {
 	position: relative;
 
 }
-.wrapper div{
+.nubes{
 	position: fixed;
 	width: 350px;
 	height: 350px;
 	border-radius: 50px;
-	background-image: url(../img/dev.PNG);
+	background-image: url(../img/Cloud2.PNG);
   background-repeat: no-repeat;
 }
 #uno{
-	background: url(../img/nube.jpg);
+	background: url(../img/BG4.png);
 	background-size: 100% 100%;
 }
 #dos{
-	background: url(../back2.jpg);
+	background: url(../img/BG3.png);
 	background-size: 100% 100%;
 }
 .containerd{
@@ -150,7 +156,7 @@ section.bottle-cont .bottle {
 
 }
 #second{
-  background: #0B739A;
+	background: url(../img/BG3.png);
 
 }
 section.bottle-cont#muller .nextSection {

@@ -1,6 +1,8 @@
 
 
 $(document).ready(function(){
+
+
   	var index = 0;
 sessionStorage.setItem('scrollTo',index);
 	if(window.innerWidth > 992){
@@ -49,6 +51,7 @@ sessionStorage.setItem('scrollTo',index);
 	})
 
 	$(document).on('click','.nextSection',function(){
+
 		window.onscroll = null
 		$(this).closest('.bottle-cont').removeClass('mousemove')
 		$(this).closest('.bottle-cont').find('.pattern img').each(function(){ $(this).removeAttr('style') })
@@ -88,13 +91,25 @@ sessionStorage.setItem('scrollTo',index);
 			scrollTop: newElem.offset().top
 		}, 1000, function(){
 			jQuery('html,body').stop(true,true);
+
 			initOffset = $(window).scrollTop()
 			$('.bottle-cont').each(function(){ $(this).removeClass('active') })
 			newElem.addClass('active')
 			setTimeout(function(){
-				newElem.addClass('mousemove').removeClass('transition')
+				newElem.addClass('mousemove').removeClass('transition');
+
 			},2250)
+      let pres=  $('#presentacion');
+      if (pres.hasClass('active')){
+
+        $('div.presentaciones').show("slow");
+
+    }else {
+        $('div.presentaciones').hide("slow");
+    }
+
 		});
+
 	}
 
 	function scrollBind(){
