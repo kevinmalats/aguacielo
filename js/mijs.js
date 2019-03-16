@@ -83,7 +83,7 @@ sessionStorage.setItem('scrollTo',index);
 			})
 		}
 
-
+  
 		jQuery('html,body').animate({
 			scrollTop: newElem.offset().top
 		}, 1000, function(){
@@ -102,6 +102,7 @@ sessionStorage.setItem('scrollTo',index);
 		if(window.innerWidth > 992){
 
 			var $activeView = $('.bottle-cont.active');
+
       if($activeView[0]==undefined) $activeView=$("#storia");
      var sig=$activeView.next('.bottle-cont')[0];
 			if($activeView[0] == undefined && ($(window).scrollTop() < (window.innerHeight * 7))){
@@ -228,9 +229,9 @@ sessionStorage.setItem('scrollTo',index);
       item.style.position="absolute";
        item.style.zIndex="13";
 
-       menu.style.padding = '26px 26px 200vw 200vw';
+      menu.style.padding = '26px 26px 200vw 200vw';
        menu.style.zIndex="12";
-
+menu.style.overflow= "scroll";
       item.style.display = 'block';
       icono="fas fa-window-close icon-menu";
       btnaction.className=icono;
